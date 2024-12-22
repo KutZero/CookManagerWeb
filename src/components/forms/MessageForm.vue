@@ -1,5 +1,5 @@
 <script setup>
-import BaseForm from '../components/BaseForm.vue'
+import BaseForm from './BaseForm.vue'
 
 </script>
 
