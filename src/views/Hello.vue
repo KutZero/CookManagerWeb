@@ -1,9 +1,7 @@
 <script setup>
 import Footer from '../components/Footer.vue'
-import {
-    useRouter
-  } from 'vue-router'
-  const router = useRouter()
+import {useRouter  } from 'vue-router'
+const router = useRouter()
 </script>
 
 <template>
@@ -11,9 +9,10 @@ import {
     <h1>Сложнейшую таску осилит лишь сильнейший. Или любой трудяга с CookManager</h1>
     <p>Простой, удобный и единственный инструмент нужный вам для планирования</p>
     <img src="../assets/business.png">
-    <button @click="router.push({ name: 'logup' })">Начать бесплатно</button>
+    <button @click="router.push({ name: 'loginup' , params: { scenario: 'logup', stage: 'init'}})">Начать бесплатно</button>
     <!-- <router-link :to="{ name: 'login' }">Войти в аккаунт</router-link> -->
-    <RouterLink to="/login">Войти в аккаунт</RouterLink>
+    <!-- <RouterLink to="/loginup">Войти в аккаунт</RouterLink> -->
+    <router-link :to="{ name: 'loginup', params: { scenario: 'login', stage: 'init'} }">Войти в аккаунт</router-link>
 
     <Footer/>
   </div>
