@@ -13,9 +13,55 @@ body {
     display: flex;
   }
 
-  .wrapper{
-    text-align: center;
-    padding: 2%;
-    width: 80%;
-    height: 100%;
-  }
+.wrapper{
+  text-align: center;
+  padding: 2%;
+  width: 80%;
+  height: 100%;
+}
+
+.blue_button{
+  color: white;
+  background: #75B3F9;
+  border-radius: 5px;
+}
+
+.white_border_button{
+  color: white;
+  background: transparent;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.white_border_input{
+  border: 2px solid white;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.form_h1{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 30;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+}
+
+.title_box{
+  background: white;
+  height: 30%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.form_window{
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  background: linear-gradient(#134F88, black);
+  border-color: white;
+  border: 4px;
+  width: 30vw;
+  height: 60vh;
+  border-radius: 10px;
+}
